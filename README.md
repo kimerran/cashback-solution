@@ -17,3 +17,8 @@ Documentation: http://localhost:3000/api
 ```shell
 ./scripts/init.sh
 ```
+
+## Run Tests
+```shell
+npm run test
+```

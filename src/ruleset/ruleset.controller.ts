@@ -17,9 +17,4 @@ export class RulesetController {
     findAll() {
         return this.rulesetService.findAll()
     }
-
-    // @Get("/:id")
-    // findById(@Param('id') id: Number) {
-    //     return this.rulesetService.findById(id)
-    // }
 }

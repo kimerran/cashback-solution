@@ -1,6 +1,4 @@
-import { Body, Controller, Get, Post } from '@nestjs/common';
-import { CashbackService } from 'src/cashback/cashback.service';
-import { RulesetService } from 'src/ruleset/ruleset.service';
+import { Body, Controller, Post } from '@nestjs/common';
 import { CreateTransactionDto } from './dto/create-transaction.dto';
 import { TransactionService } from './transaction.service';
 
@@ -13,10 +11,6 @@ export class TransactionController {
 
     @Post("/")
     create(@Body() tx: CreateTransactionDto ) {
-        this.transactionService.create(tx.date, tx.id);
+        return this.transactionService.create(tx.date, tx.id);
     }
-
-
-
-
 }

@@ -1,6 +1,6 @@
 import { Body, Controller, Post, Get, Param } from '@nestjs/common';
-import { RulesetService } from 'src/ruleset/ruleset.service';
-import { TransactionService } from 'src/transaction/transaction.service';
+import { RulesetService } from '../ruleset/ruleset.service';
+import { TransactionService } from '../transaction/transaction.service';
 import { CashbackService } from './cashback.service';
 import { CreateCashbackDto } from './dto/create-cashback.dto';
 

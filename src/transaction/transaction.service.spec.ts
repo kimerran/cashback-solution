@@ -15,4 +15,14 @@ describe('TransactionService', () => {
   it('should be defined', () => {
     expect(service).toBeDefined();
   });
+
+  it('create', () => {
+    const newService = service.create(new Date("2022-06-30"), "1")
+    expect(newService).toBeDefined()
+  })
+
+  it('findAll', () => {
+    service.create(new Date("2022-06-30"), "1")
+    expect(service.findAll().length).toBe(1)
+  })
 });
